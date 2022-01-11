@@ -1,13 +1,14 @@
 {
-  "name": "node-wifi",
-  "version": "2.0.14",
-  "description": "NodeJS tool to manage wifi",
+  "name": "wifi",
+  "version": "0.1.0",
+  "description": "Tool to manage wifi",
   "keywords": [
     "wifi",
     "multiplatform",
-    "node"
+    "nodejs",
+    "deno"
   ],
-  "author": "Thibault Friedrich",
+  "author": "Jimmy Wärting",
   "contributors": [
     "Thibault Friedrich <thibault.friedrich@gmail.com> (https://thibaultfriedrich.io)"
   ],
@@ -29,35 +30,14 @@
   "directories": {
     "test": "test"
   },
-  "type": "commonjs",
+  "type": "module",
   "engines": {
-    "node": ">=10.0.0"
-  },
-  "dependencies": {
-    "command-line-args": "^5.2.0",
-    "command-line-usage": "^6.1.1"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
-    "@commitlint/travis-cli": "^13.1.0",
-    "babel-eslint": "^10.1.0",
-    "dotenv": "^10.0.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-jest": "^24.4.0",
-    "eslint-plugin-node": "^11.1.0",
-    "husky": "^7.0.1",
-    "jest": "^27.0.6",
-    "prettier": "^2.3.2",
-    "standard-version": "^9.3.1"
+    "node": ">=12.20"
   },
   "scripts": {
-    "test": "jest",
-    "commitlint": "commitlint --from 8005de94dd1d0d1220d6fa09a163f97c4a22deda",
-    "lint": "eslint {src,bin}/**/*.js",
-    "format": "prettier --check '{src,bin}/**/*.js'",
-    "format:fix": "prettier --write '{src,bin}/**/*.js'",
-    "release": "standard-version"
+    "test": ""
+  },
+  "devDependencies": {
+    "@types/node": "^16.6.0"
   }
 }
